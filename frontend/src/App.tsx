@@ -4,6 +4,8 @@ import "./App.css";
 import Home from "./Home/Home";
 import Products from "./Products/Products";
 import { Link, Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import Orders from "./Orders/Orders";
+import OrderDetail from "./Orders/OrderDetail";
 
 function App() {
   const openMenu = () => {
@@ -24,6 +26,7 @@ function App() {
           <div className="header-links">
             <Link to="/">Home</Link>
             <Link to="/catalog">Catalog</Link>
+            <Link to="/orders">Orders</Link>
           </div>
         </header>
         <aside className="sidebar">
@@ -44,6 +47,8 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/catalog" element={<Products />} />
+            <Route path="/orders" element={<Orders />} />
+            <Route path="/orders/:id" element={<OrderDetail />} />
           </Routes>
         </main>
         <footer className="footer">&copy; 2024 Glass Python</footer>
