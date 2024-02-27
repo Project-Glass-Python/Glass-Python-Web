@@ -1,9 +1,9 @@
-import React from "react";
 import logo from "./logo.svg";
+import React from 'react';
 import "./App.css";
 import Home from "./Home/Home";
 import Products from "./Products/Products";
-import { Link, Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import { Link, Route, BrowserRouter as Router } from "react-router-dom";
 
 function App() {
   const openMenu = () => {
@@ -41,10 +41,10 @@ function App() {
           </ul>
         </aside>
         <main className="main">
-          <Routes>
+          {/* <Routes> */}
             <Route path="/" element={<Home />} />
             <Route path="/catalog" element={<Products />} />
-          </Routes>
+          {/* </Routes> */}
         </main>
         <footer className="footer">&copy; 2024 Glass Python</footer>
       </div>
