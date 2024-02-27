@@ -82,6 +82,10 @@ body {
   }
 }
 
+.content {
+  background-color: red;
+}
+
 .products {
   display: flex;
   justify-content: center;
