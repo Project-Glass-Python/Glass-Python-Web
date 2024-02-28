@@ -1,5 +1,3 @@
-import logo from "./logo.svg";
-import React from "react";
 import "./App.css";
 import Home from "./Home/Home";
 import Products from "./Products/Products";
@@ -30,6 +28,7 @@ function App() {
             <Link to="/catalog">Catalog</Link>
             <Link to="/orders">Orders</Link>
             <Link to="/payment">Payments</Link>
+            <Link to="/fulfillment">Fulfillment</Link>
           </div>
         </header>
         <aside className="sidebar">
@@ -54,8 +53,6 @@ function App() {
             <Route path="/order/:id" element={<OrderDetail />} />
             <Route path="/payment" element={<PaymentScreen />} />
             <Route path="/fulfillment" element={<Fulfillment />} />
-
-
           </Routes>
         </main>
         <footer className="footer">&copy; 2024 Glass Python</footer>

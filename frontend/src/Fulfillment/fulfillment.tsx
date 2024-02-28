@@ -1,10 +1,9 @@
-import React from 'react';
-import CheckoutSteps from '../Payment/CheckoutSteps'; 
+import React from "react";
+import CheckoutSteps from "../Payment/CheckoutSteps";
 
 const mockFulfillmentData = [
-  { orderId: '001', productName: 'Widget A', status: 'shipped' },
-  { orderId: '002', productName: 'Widget B', status: 'unshipped' },
-  
+  { orderId: "001", productName: "Widget A", status: "shipped" },
+  { orderId: "002", productName: "Widget B", status: "unshipped" },
 ];
 
 function Fulfillment() {
@@ -17,10 +16,17 @@ function Fulfillment() {
             <h2>Fulfillment</h2>
           </li>
           {mockFulfillmentData.map(({ orderId, productName, status }) => (
-            <li key={orderId} className={`order-item ${status === 'unshipped' ? 'unshipped' : ''}`}>
+            <li
+              key={orderId}
+              className={`order-item ${
+                status === "unshipped" ? "unshipped" : ""
+              }`}
+            >
               <div>
-                <span>Order ID: {orderId}</span><br />
-                <span>Product: {productName}</span><br />
+                <span>Order ID: {orderId}</span>
+                <br />
+                <span>Product: {productName}</span>
+                <br />
                 <span>Status: {status}</span>
               </div>
             </li>
@@ -32,4 +38,3 @@ function Fulfillment() {
 }
 
 export default Fulfillment;
-
