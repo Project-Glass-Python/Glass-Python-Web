@@ -195,3 +195,6 @@ input {
 .unshipped {
   color: #FF0000;
 }
+.continue {
+  width: 100%;
+}
