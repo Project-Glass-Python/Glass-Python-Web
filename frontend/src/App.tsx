@@ -48,7 +48,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/catalog" element={<Products />} />
             <Route path="/orders" element={<Orders />} />
-            <Route path="/orders/:id" element={<OrderDetail />} />
+            <Route path="/order/:id" element={<OrderDetail />} />
           </Routes>
         </main>
         <footer className="footer">&copy; 2024 Glass Python</footer>
