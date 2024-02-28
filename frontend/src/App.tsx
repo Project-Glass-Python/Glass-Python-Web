@@ -6,6 +6,7 @@ import Products from "./Products/Products";
 import { Link, Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Orders from "./Orders/Orders";
 import OrderDetail from "./Orders/OrderDetail";
+import PaymentScreen from "./Payment/Payment";
 
 function App() {
   const openMenu = () => {
@@ -49,6 +50,7 @@ function App() {
             <Route path="/catalog" element={<Products />} />
             <Route path="/orders" element={<Orders />} />
             <Route path="/order/:id" element={<OrderDetail />} />
+            <Route path="/payment" element={<PaymentScreen />} />
           </Routes>
         </main>
         <footer className="footer">&copy; 2024 Glass Python</footer>
