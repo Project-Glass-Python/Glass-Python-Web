@@ -17,6 +17,7 @@ function App() {
   };
   return (
     <Router>
+      <div className="App">
       <div className="grid-container">
         <header className="header">
           <div className="brand">
@@ -52,6 +53,7 @@ function App() {
           </Routes>
         </main>
         <footer className="footer">&copy; 2024 Glass Python</footer>
+      </div>
       </div>
     </Router>
   );
