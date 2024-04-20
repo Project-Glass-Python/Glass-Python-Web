@@ -1,6 +1,6 @@
 import React from "react";
 
-import CheckoutSteps from "../Payment/CheckoutSteps";
+import CheckoutSteps from "./CheckoutSteps";
 
 function PaymentScreen() {
   const submitHandler = () => {
@@ -10,29 +10,29 @@ function PaymentScreen() {
   return (
     <div>
       <CheckoutSteps step1 step2 step3></CheckoutSteps>
-      <div className="form">
+      <div className='form'>
         <form onSubmit={submitHandler}>
-          <ul className="form-container">
+          <ul className='form-container'>
             <li>
               <h2>Payment</h2>
             </li>
             <li>
               <div>
                 <input
-                  type="radio"
-                  name="paymentMethod"
-                  id="paymentMethod"
-                  value="paypal"
+                  type='radio'
+                  name='paymentMethod'
+                  id='paymentMethod'
+                  value='paypal'
                 ></input>
-                <label htmlFor="paymentMethod">Paypal</label>
+                <label htmlFor='paymentMethod'>Paypal</label>
                 <input
-                  type="radio"
-                  name="paymentMethod"
-                  id="paymentMethod"
-                  value="bitcoin"
+                  type='radio'
+                  name='paymentMethod'
+                  id='paymentMethod'
+                  value='bitcoin'
                 ></input>
-                <label htmlFor="paymentMethod">Bitcoin</label>
-                <button type="submit" className="continue">
+                <label htmlFor='paymentMethod'>Bitcoin</label>
+                <button type='submit' className='continue'>
                   Continue
                 </button>
               </div>
