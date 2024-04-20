@@ -8,10 +8,10 @@ on:
 jobs: 
   ci-build:
     name: Build and Test
-    runs on: ubuntu-latest
+    runs-on: ubuntu-latest
     defaults:
       run:  
-        working-directory: ./frontend
+        working-directory: ./src
 
     steps:
       - uses: actions/checkout@v2
